@@ -1,0 +1,143 @@
+.footer {
+
+    background: #302E3F;
+    border-radius: 0px;
+    padding:45px 0;
+
+    color:#ffffff;
+
+    &__wrap {
+        color:#ffffff;
+    }
+
+    &__logo-wrap {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 45px;
+        padding-bottom: 30px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    }
+
+    &__logo {
+        margin-right: 18px;
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+        @media (max-width: 991px){
+            flex-wrap: wrap;
+        }
+    }
+
+    &__nav-list {
+        min-width: 205px;
+        @media (max-width: 991px){
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 575px){
+            display: none;
+        }
+    }
+
+    &__nav-item {
+        margin-bottom: 8px;
+    }
+
+    &__nav-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+
+        margin-bottom: 14px;
+    }
+
+    &__nav-link {
+        font-size: 16px;
+        line-height: 16px;
+        color: #C5E9EA;
+        white-space: nowrap;
+
+        &:hover{
+            color: #8BD4D6;
+        }
+        &:active{
+            color: black;
+        }
+    }
+
+    &__contacts{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    }
+
+    &__contacts-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+
+        margin-bottom: 13px;
+    }
+
+    &__contacts-item{
+        margin-bottom: 8px;
+    }
+
+    &__contacts-link {
+        font-size: 16px;
+        line-height: 22px;
+        color: #C5E9EA;
+
+        &:hover{
+            color: #8BD4D6;
+        }
+        &:active{
+            color: black;
+        }
+    }
+
+    &__copy {
+        display: flex;
+        align-items: flex-end;
+        @media (max-width: 575px){
+            padding-top: 30px;
+        }
+    }
+
+    &__copy-link {
+        font-size: 12px;
+        line-height: 24px;
+        color: #C5E9EA;
+
+        margin-right: 27px;
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover{
+            color: #8BD4D6;
+        }
+        &:active{
+            color: black;
+        }
+    }
+
+    &__copy-link-logo {
+        margin: 0 0 0 auto;
+    }
+}

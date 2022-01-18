@@ -1,0 +1,60 @@
+.stages {
+
+    background-color: #FDECED;
+    margin-bottom: 36px;
+
+    &__title {
+        font-weight: normal;
+        font-size: 58px;
+        line-height: 58px;
+
+        padding: 88px 0 82px 0;
+        @media (max-width: 767px){
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        padding-bottom: 54px;
+        @media (max-width: 767px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        margin-right: 54px;
+        &:last-child{
+            margin-right: 0;
+        }
+        @media (max-width: 767px){
+            margin-bottom: 54px;
+        }
+    }
+
+    &__pic {
+        max-width: 100%;
+        height: auto;
+
+        margin-bottom: 24px;
+    }
+
+    &__card-title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-bottom: 10px;
+    }
+
+    &__card-subtitle {
+        font-size: 18px;
+        line-height: 24px;
+
+        max-width: 308px;
+    }
+}
