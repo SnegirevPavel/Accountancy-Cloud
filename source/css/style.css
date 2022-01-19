@@ -95,6 +95,36 @@ body {
   display: none;
 }
 
+.to-up {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  z-index: 99;
+  cursor: pointer;
+  color: black;
+  font-size: 32px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  padding-top: 6px;
+  display: none;
+}
+@media (max-width: 575px) {
+  .to-up {
+    visibility: hidden;
+  }
+}
+.to-up:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
 @media (max-width: 575px) {
   .header {
     margin-top: 150px;
